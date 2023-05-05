@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="head">
+          <div class="nav-bar">
+            <ul class="nav">
+              <li class="li-nav"><a href="index.html">Home</a></li>
+              <li class="li-nav"><a href="#">Contact</a></li>
+              <li class="li-nav"><a href="troli.html">Troli</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="body">
+             <div class="card">
+            <div class="isi-card">
+              <img src="./foto/L298N-motor-driver-module-H-Bridge.jpg" />
+              <hr />
+              <div class="nama"><h3>Driver motor L298N</h3></div>
+              <div class="harga"><h3>19.000</h3></div>
+              <button onclick="addToCart('driver', 1, 19000)">+</button>
+              <button onclick="removeFromCart('driver')">-</button>
+              <div id="list-cart"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="isi-card">
+              <img src="./foto/Arduino_Uno_-_R3.jpg" />
+              <hr />
+              <div class="nama"><h3>Arduino Uno</h3></div>
+              <div class="harga"><h3>117.000</h3></div>
+              <button onclick="addToCart('arduino', 1, 117000)">+</button>
+              <button onclick="removeFromCart('arduino')">-</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="isi-card">
+              <img src="./foto/espp.jpg" />
+              <hr />
+              <div class="nama"><h3>Esp 8266</h3></div>
+              <div class="harga"><h3>35.000</h3></div>
+              <button onclick="addToCart('esp', 1, 35000)">+</button>
+              <button onclick="removeFromCart('esp')">-</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="isi-card">
+              <img src="./foto/batre.jpg" />
+              <hr />
+              <div class="nama"><h3>Baterai 3.7v</h3></div>
+              <div class="harga"><h3>11.000</h3></div>
+              <button onclick="addToCart('batre', 1, 11000)">+</button>
+              <button onclick="removeFromCart('batre')">-</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="isi-card">
+              <img src="./foto/senso.jpg" />
+              <br>
+              <br>
+              <hr />
+              <div class="nama"><h3>Sensor ultrasonik<br> hc-sr04</h3></div>
+              <div class="harga"><h3>14.500</h3></div>
+              <button onclick="addToCart('sensor', 1, 14500)">+</button>
+              <button onclick="removeFromCart('sensor')">-</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+ </html>
+<script src="aa.js"></script>
