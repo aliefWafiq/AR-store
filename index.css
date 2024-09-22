@@ -25,12 +25,28 @@ html {
   width: 100%;
 }
 
+.wrapper-2 {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 .padding {
   padding: 20px;
 }
 
 .flex {
   display: flex;
+}
+
+.w-50 {
+  width: 50%;
 }
 
 .center {
@@ -44,7 +60,7 @@ html {
   display: flex;
   justify-content: space-between;
   position: fixed;
-
+  z-index: 20;
 }
 
 .wrap-nav {
@@ -122,6 +138,17 @@ html {
   font-style: normal;
 }
 
+.headline2 {
+  line-height: 40px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  z-index: 10;
+  text-align: center;
+}
+
 .btn-wrap1 {
   width: 100%;
 }
@@ -135,6 +162,53 @@ html {
   padding: 10px;
   border-radius: 12px;
   margin-top: 20px;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  background-color: #1d91a3;
+  color: white;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
+
+.wrap-keunggulan {
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+
+.img2 {
+  width: 300px;
+  height: 300px;
+  animation: scroll 60s linear infinite;
+}
+
+.slide-track {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider {
+  width: 100%;
+  transform: rotate(-30deg);
+}
+
+.wrap-sec2 {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes scroll {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-1000%)}
 }
 
 @media (max-width: 480px) {
